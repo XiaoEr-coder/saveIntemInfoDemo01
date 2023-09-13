@@ -1,0 +1,2 @@
+# saveIntemInfoDemo01
+使用textView显示当前时间，并且随机设定textView颜色。 添加ImageView和gif框架，使用ImageView组件播放gif动图
