@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tv_color"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/dog_fish"
+            android:layout_marginTop="150dp"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:scaleType="centerInside"
+            android:layout_toStartOf="@+id/tv"/>
+
+        <LinearLayout
+            android:id="@+id/tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/tv_show"
+                android:layout_width="wrap_content"
+                android:layout_height="150dp"
+                android:gravity="center"
+                android:text="Hello World!"
+                android:textColor="#66FF00"
+                android:textSize="60dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_show2"
+                android:layout_width="wrap_content"
+                android:layout_height="150dp"
+                android:layout_marginTop="8dp"
+                android:gravity="center"
+                android:keepScreenOn="true"
+                android:text="Hello World!"
+                android:textColor="#66FF00"
+                android:textSize="80dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/fly_dog"
+            android:layout_marginTop="150dp"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:scaleType="centerInside"
+            android:layout_marginStart="15dp"
+            android:layout_toEndOf="@+id/tv"/>
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
